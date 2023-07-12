@@ -8,7 +8,11 @@ export const Settings = ({
     }
     function handleCompanyChange (e) {
         const {value} = e.target;
-        setCompanyInsert(value)
+        if (value.length < 1) {
+            setCompanyInsert(" any team.")
+        } else {
+            setCompanyInsert(`${value}.`)
+        }
     }
 
     return(
