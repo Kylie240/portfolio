@@ -1,10 +1,14 @@
 export const Settings = ({
-    setCompanyInsert, setNameInsert
+    setCompanyInsert, setNameInsert, 
 }) => {
 
     function handleNameChange (e) {
         const {value} = e.target;
-        setNameInsert(` ${value}`)
+        if (value.length < 1) {
+            setNameInsert("")
+        } else {
+            setNameInsert(` ${value}`)
+        }
     }
     function handleCompanyChange (e) {
         const {value} = e.target;
@@ -17,7 +21,7 @@ export const Settings = ({
 
     return(
         <div className="settings-container">
-            <div>
+            <div className="settings-form">
                 <div>
                     <label htmlFor="name">Name</label>
                     <input 

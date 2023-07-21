@@ -5,6 +5,7 @@
   /*OCEAN THEME VARIABLES*/
 }
 body{
+  background: rgb(236, 235, 235);
   --primary-ocean-color: rgb(255, 255, 255);
   --secondary-ocean-color: rgb(223, 237, 245);
   --tertiary-ocean-color: rgb(44, 57, 70);
@@ -106,12 +107,18 @@ body.active {
   right: 100px;
   width: 500px;
   position: absolute;
-  border-radius: 20px;
-  box-shadow: -8px 8px 20px rgba(80, 80, 80, 0.4);
+  border-radius: 10px;
+  box-shadow: -30px 30px 20px rgba(80, 80, 80, 0.4);
+  transition: .3s ease-in-out;
   background-color: var(--tertiary-ocean-color);
 }
 .right-middle-container:hover{
-  box-shadow: -12px 12px 26px rgba(80, 80, 80, 0.4);
+  top: 398px;
+  right: 98px;
+  width: 500px;
+  position: absolute;
+  border-radius: 15px;
+  box-shadow: -34px 34px 20px rgba(90, 90, 90, 0.4);
 }
 .toolbox-list{
   display: flex;
@@ -136,13 +143,102 @@ body.active {
   position: absolute;
   display: flex;
   flex-direction: column;
+  gap: 8px;
   right: 4%;
   top: 60px;
   padding: 12px;
-  background-color: rgba(80, 80, 80, 0.3);
+  background-color: var(--tertiary-ocean-color);
+  color: white;
   border-radius: 14px;
 }
-.settings-container form{
+.settings-form{
   display: flex;
   flex-direction: column;
+  align-content: space-between;
+  gap: 8px;
+}
+.settings-form input{
+  display: flex;
+  flex-direction: column;
+  height: 2rem;
+}
+
+.projects-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  gap: 8rem;
+  margin: 8rem 0;
+}
+
+.project{
+  width: 50%;
+  color: white;
+  border-radius: 14px;
+  border-radius: 1rem;
+  background: var(--tertiary-ocean-color);
+  position: relative;
+}
+.project-img{
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  object-position: top;
+  border-radius: 1rem;
+  box-shadow: 15px 15px 10px rgba(14, 14, 14, 0.4);
+  position: relative;
+  top: -2rem;
+  left: -3rem;
+  transition: 7s ease-in-out;
+}
+.project-img:hover{
+  object-position: bottom;
+}
+.project-description{
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: start;
+}
+.project-title{
+  font-size: 3rem;
+}
+.project-stack{
+  display: flex;
+  gap: 10px;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  width: 85%;
+}
+.project-info{
+  font-size: 1.2rem;
+  margin: 12px 0;
+  width: 60%;
+}
+.stack-item {
+  padding: 8px;
+  letter-spacing: 2px;
+  font-size: 1.2rem;
+  background-color: var(--primary-ocean-color);
+  color: var(--tertiary-ocean-color);
+}
+.project-btns{
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  right: -2rem;
+  font-size: 2rem;
+}
+.project-btns a{
+  text-decoration: none;
+  color: var(--tertiary-ocean-color);
+  padding: 10px;
+  background: white;
+  border-radius: 8px;
+  margin: 8px 0;
+  box-shadow: -10px 10px 10px rgba(14, 14, 14, 0.4);
 }

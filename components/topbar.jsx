@@ -1,6 +1,8 @@
+import { useState } from "react"
 import { Settings } from "./settings"
 
-export const Topbar = () => {
+export const Topbar = ({setCompanyInsert, setNameInsert, }) => {
+    const [toggleModal, setToggleModal] = useState(false)
     function themeToggler () {
         document.body.classList.toggle('active')
     }
@@ -10,8 +12,9 @@ export const Topbar = () => {
             <h3 className="topbar-heading">KYLIE OLIVER</h3>
             <i id="topbar-gear" 
                 className="fa-solid fa-gear fa-xl sidebar-icon"
-                onClick={themeToggler}
+                onClick={() => setToggleModal(!toggleModal)}
             ></i>
+        {toggleModal && <Settings setNameInsert={setNameInsert} setCompanyInsert={setCompanyInsert}/>}
         </div>
     )
 }
