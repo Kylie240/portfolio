@@ -1,5 +1,5 @@
 export const Settings = ({
-    setCompanyInsert, setNameInsert, 
+    setCompanyInsert, setNameInsert, toggleModal, setToggleModal, 
 }) => {
 
     function handleNameChange (e) {
@@ -19,9 +19,31 @@ export const Settings = ({
         }
     }
 
+    function toggleTheme () {
+        const waterTheme = document.getElementById("fa-water")
+        const mountainTheme = document.getElementById("fa-mountain")
+
+        console.log(waterTheme.classList);
+
+        if (document.body.classList.contains("active")) {
+            document.body.classList.remove("active")
+            mountainTheme.classList.remove("active-theme")
+            waterTheme.classList.add("active-theme")
+        } else {
+            document.body.classList.add("active")
+            waterTheme.classList.remove("active-theme")
+            mountainTheme.classList.add("active-theme")
+        }
+    }
+
     return(
         <div className="settings-container">
             <div className="settings-form">
+                <h4>Settings</h4> 
+                <div className="settings-info">
+                    <i class="fa-regular fa-circle-question"></i>
+                    <p>Input your information to change the homepage.</p>
+                </div>
                 <div>
                     <label htmlFor="name">Name</label>
                     <input 
@@ -38,12 +60,16 @@ export const Settings = ({
                         onChange={(e) => handleCompanyChange(e)}
                         placeholder="company"/>
                 </div>
-                <div>
-                    <i className="fa-solid fa-droplet theme-btn"></i>
-                    <i className="fa-solid fa-leaf theme-btn"></i>
+                <div className="theme-container">
+                    <label htmlFor="theme-toggler">Theme:</label>
+                    <div className="theme-toggler" onClick={() => toggleTheme()}>
+                        <i id="fa-water" class="fa-solid fa-water active-theme"></i>
+                        <i id="fa-mountain" class="fa-solid fa-mountain"></i>
+                        <span></span>
+                    </div>
                 </div>
             </div>
-            <button>close</button>
+            <button onClick={() => setToggleModal(!toggleModal)}>close</button>
         </div>
     )
 }

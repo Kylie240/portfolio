@@ -1,9 +1,9 @@
-import { useState } from 'react'
 import './App.css'
 import { Home } from './pages/home'
 import { Sidebar } from '../components/sidebar'
-import { Topbar } from './../components/topbar';
 import Projects from './pages/projects';
+import Footer from '../components/footer';
+import Contact from './pages/contact';
 
 function App() {
 
@@ -12,6 +12,8 @@ function App() {
       <Sidebar />
       <Home />
       <Projects />
+      <Contact />
+      <Footer />
     </>
   )
 }

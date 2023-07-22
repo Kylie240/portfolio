@@ -17,7 +17,11 @@ export const Topbar = ({setCompanyInsert, setNameInsert, }) => {
                         className="fa-solid fa-gear fa-xl"
                         onClick={() => setToggleModal(!toggleModal)}
                     ></i>
-                    {toggleModal && <Settings setNameInsert={setNameInsert} setCompanyInsert={setCompanyInsert}/>}
+                    {toggleModal && <Settings setToggleModal={setToggleModal} 
+                        toggleModal={toggleModal} 
+                        setNameInsert={setNameInsert} 
+                        setCompanyInsert={setCompanyInsert}/>
+                    }
                 </div>
                 <div className="mobile-menu">
                     <i class="fa-solid fa-bars fa-xl"

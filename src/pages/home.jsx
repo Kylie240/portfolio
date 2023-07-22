@@ -21,7 +21,7 @@ export const Home = () => {
                 <div onMouseLeave={() => handleExitHover()} className="left-home-container">
                     <h1 className="homepage-header">Hi<span id="name-insert">{nameInsert}!</span> I'm Kylie,
                     and I<span id="header-insert" onMouseEnter={() => handleHover()}>'m a frontend developer</span></h1>
-                    <p className="homepage-paragraph">I am a self-starting developer who is passionate about crafting visually pleasing responsive projects, and would make a great addition to <span>{companyInsert}</span></p>
+                    <p className="homepage-paragraph">I am a self-starter who is passionate about crafting visually pleasing responsive projects, and would make a great addition to <span>{companyInsert}</span></p>
                     <div className="home-links">
                         <i className="fa-solid fa-user fa-2x"></i>
                         <i className="fa-brands fa-github fa-2x"></i>

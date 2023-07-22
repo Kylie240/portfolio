@@ -5,7 +5,7 @@ const Footer = () => {
     <div className='footer-container'>
         <div className='footer-personal'>
             <h3>Kylie Oliver</h3>
-            <p>© 2023, Built and designed by Alejandro Aspinwall</p>
+            <p>© 2023, Built and designed by Kylie Oliver</p>
         </div>
         <div className='footer-links'>
             <h3>Get in touch</h3>

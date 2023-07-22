@@ -3,6 +3,7 @@ import React from 'react'
 const Projects = () => {
   return (
     <div class="projects-container">
+        <h1>Projects</h1>
         <div className="project">
             <img className='project-img' src="src/images/localhost_5173_ (1).png" alt="" />
             <div className="project-description">
