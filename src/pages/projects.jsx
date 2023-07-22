@@ -43,7 +43,7 @@ const Projects = () => {
                 </ul>
                 <div class="project-btns">
                     <a href="https://github.com/Kylie240/word-search" target="_blank">Code <i class="fa-brands fa-github"></i></a>
-                    <a href="" target="_blank">Live Site <i class="fa-solid fa-up-right-from-square"></i></a>
+                    <a href="https://oliver-word-search.netlify.app/" target="_blank">Live Site <i class="fa-solid fa-up-right-from-square"></i></a>
                 </div>
             </div>
         </div>
