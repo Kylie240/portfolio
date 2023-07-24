@@ -5,7 +5,7 @@ const Projects = () => {
     <div class="projects-container">
         <h1>Projects</h1>
         <div className="project">
-            <img className='project-img' src="src/images/localhost_5173_ (1).png" alt="" />
+            <img className='project-img' src="/localhost_5173_ (1).png" alt="" />
             <div className="project-description">
                 <h3 className="project-title">Ready shoot</h3>
                 <p className="project-info">
@@ -28,7 +28,7 @@ const Projects = () => {
             </div>
         </div>
         <div className="project">
-            <img className='project-img' src="src/images/localhost_5173_.png" alt="" />
+            <img className='project-img' src="/localhost_5173_.png" alt="" />
             <div className="project-description">
                 <h3 className="project-title">Word Search</h3>
                 <p className="project-info">
@@ -48,7 +48,7 @@ const Projects = () => {
             </div>
         </div>
         <div className="project">
-            <img className='project-img' src="src/images/localhost_5174_.png" alt="" />
+            <img className='project-img' src="/localhost_5174_.png" alt="" />
             <div className="project-description">
                 <h3 className="project-title">Smoothie Queen</h3>
                 <p className="project-info">
