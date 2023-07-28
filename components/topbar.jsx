@@ -4,6 +4,9 @@ import { Settings } from "./settings"
 export const Topbar = ({setCompanyInsert, setNameInsert, }) => {
     const [toggleModal, setToggleModal] = useState(false)
     const [toggleMobileMenu, setToggleMobileMenu] = useState(false)
+
+    const contactElement = document.getElementById("contact")
+
     function themeToggler () {
         document.body.classList.toggle('active')
     }
@@ -30,13 +33,13 @@ export const Topbar = ({setCompanyInsert, setNameInsert, }) => {
                     {toggleMobileMenu && <div className="mobile-list">
                         <ul>
                             <li>
-                                <a href="/about">About</a>
+                                <a href="#about">About</a>
                             </li>
                             <li>
-                                <a href="/about">Projects</a>
+                                <a href="#projects">Projects</a>
                             </li>
                             <li>
-                                <a href="/about">Contact</a>
+                                <a href="#contact">Contact</a>
                             </li>
                         </ul>
                     </div>}

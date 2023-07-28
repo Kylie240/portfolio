@@ -1,14 +1,10 @@
 export const Sidebar = () => {
     return (
         <div className="sidebar">
-            <i className="fa-solid fa-user sidebar-icon fa-2x"></i>
-            <a href=""></a>
-            <i className="fa-brands fa-github sidebar-icon fa-2x"></i>
-            <a href="https://github.com/Kylie240"></a>
-            <i className="fa-brands fa-linkedin-in sidebar-icon fa-2x"></i>
-            <a href="www.linkedin.com/in/kylie-oliver"></a>
-            <i className="fa-solid fa-file sidebar-icon fa-2x"></i>
-            <a href=""></a>
+            <a href="#about"><i className="fa-solid fa-user sidebar-icon fa-xl"></i></a>
+            <a href="https://github.com/Kylie240" target="_blank"><i className="fa-brands fa-github sidebar-icon fa-xl"></i></a>            
+            <a href="https://linkedin.com/in/kylie-oliver" target="_blank"><i className="fa-brands fa-linkedin-in sidebar-icon fa-xl"></i></a>            
+            <a href="Oliver Resume.pdf" target="_blank"><i className="fa-solid fa-file sidebar-icon fa-xl"></i></a>
         </div>
     )
 }

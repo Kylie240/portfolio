@@ -20,19 +20,17 @@ export const Settings = ({
     }
 
     function toggleTheme () {
-        const waterTheme = document.getElementById("fa-water")
-        const mountainTheme = document.getElementById("fa-mountain")
-
-        console.log(waterTheme.classList);
+        const cloudTheme = document.getElementById("fa-cloud")
+        const mughotTheme = document.getElementById("fa-mug-hot")
 
         if (document.body.classList.contains("active")) {
             document.body.classList.remove("active")
-            mountainTheme.classList.remove("active-theme")
-            waterTheme.classList.add("active-theme")
+            mughotTheme.classList.remove("active-theme")
+            cloudTheme.classList.add("active-theme")
         } else {
             document.body.classList.add("active")
-            waterTheme.classList.remove("active-theme")
-            mountainTheme.classList.add("active-theme")
+            cloudTheme.classList.remove("active-theme")
+            mughotTheme.classList.add("active-theme")
         }
     }
 
@@ -40,31 +38,28 @@ export const Settings = ({
         <div className="settings-container">
             <div className="settings-form">
                 <h4>Settings</h4> 
-                <div className="settings-info">
-                    <i class="fa-regular fa-circle-question"></i>
-                    <p>Input your information to change the homepage.</p>
-                </div>
-                <div>
+                <p>Input your information to change the homepage.</p>
+                <div className="settings-input">
                     <label htmlFor="name">Name</label>
                     <input 
                     type="text" 
                     name="name" 
                     onChange={(e) => handleNameChange(e)}
-                    placeholder="name"/>
+                    placeholder="your name"/>
                 </div>
-                <div>
+                <div className="settings-input">
                     <label htmlFor="name">Company</label>
                     <input 
                         type="text" 
                         name="company" 
                         onChange={(e) => handleCompanyChange(e)}
-                        placeholder="company"/>
+                        placeholder="company's name"/>
                 </div>
                 <div className="theme-container">
                     <label htmlFor="theme-toggler">Theme:</label>
                     <div className="theme-toggler" onClick={() => toggleTheme()}>
-                        <i id="fa-water" class="fa-solid fa-water active-theme"></i>
-                        <i id="fa-mountain" class="fa-solid fa-mountain"></i>
+                        <i id="fa-cloud" class="fa-solid fa-cloud active-theme fa-xs"></i>
+                        <i id="fa-mug-hot" class="fa-solid fa-mug-hot fa-xs"></i>
                         <span></span>
                     </div>
                 </div>

@@ -2,7 +2,7 @@ import React from 'react'
 
 const Projects = () => {
   return (
-    <div class="projects-container">
+    <div id='projects' class="projects-container">
         <h1>Projects</h1>
         <div className="project">
             <img className='project-img' src="/localhost_5173_ (1).png" alt="" />
@@ -48,7 +48,7 @@ const Projects = () => {
             </div>
         </div>
         <div className="project">
-            <img className='project-img' src="/localhost_5174_.png" alt="" />
+            <img className='project-img' src="/oliver-smoothie-queen.netlify.app_ (2).png" alt="" />
             <div className="project-description">
                 <h3 className="project-title">Smoothie Queen</h3>
                 <p className="project-info">
