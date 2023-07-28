@@ -11,6 +11,7 @@ const Projects = () => {
                 <p className="project-info">
                     A handy rental website for cameras, that utilizes authentication via JSONwebtoken and password encryption. Other features include CRUD operations, product filtering, and state management.
                 </p>
+                <p className="project-credentials"><i class="fa-solid fa-triangle-exclamation"></i> For quick login use email: "test@gmail.com" & password: "test"</p>
                 <ul className="project-stack">
                     <li className="stack-item">HTML</li>
                     <li className="stack-item">CSS</li>
@@ -54,6 +55,7 @@ const Projects = () => {
                 <p className="project-info">
                     Find, save, and create you favorite smoothie recipes. Features the ability to create an account, edit saves, and create a shopping list.
                 </p>
+                <p className="project-credentials"><i class="fa-solid fa-triangle-exclamation"></i> For quick login use email: "test@gmail.com" & password: "test"</p>
                 <ul className="project-stack">
                     <li className="stack-item">HTML</li>
                     <li className="stack-item">CSS</li>

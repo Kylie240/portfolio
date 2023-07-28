@@ -23,9 +23,9 @@ export const Home = () => {
                     and I<span id="header-insert" onMouseEnter={() => handleHover()}>'m a frontend developer</span></h1>
                     <p className="homepage-paragraph">I am a creative and self-starter, with an arsenal of valuable technical skills in front-end and back-end technologies. Currently looking for a new opportunity to put my expertise to use. As a hard-worker and lifelong-learner, I would make a great addition to <span>{companyInsert}</span></p>
                     <div className="home-links">                        
-                        <a href=""><i className="fa-solid fa-user fa-xl"></i></a>                        
-                        <a href="https://github.com/Kylie240"><i className="fa-brands fa-github fa-xl"></i></a>                        
-                        <a href="https://linkedin.com/in/kylie-oliver"><i className="fa-brands fa-linkedin-in fa-xl"></i></a>                        
+                        <a href="#about" target="_blank"><i className="fa-solid fa-user fa-xl"></i></a>                        
+                        <a href="https://github.com/Kylie240" target="_blank"><i className="fa-brands fa-github fa-xl"></i></a>                        
+                        <a href="https://linkedin.com/in/kylie-oliver" target="_blank"><i className="fa-brands fa-linkedin-in fa-xl"></i></a>                        
                         <a href="Oliver Resume.pdf" target="_blank"><i className="fa-solid fa-file fa-xl"></i></a>
                     </div>
                 </div>

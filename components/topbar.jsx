@@ -30,7 +30,11 @@ export const Topbar = ({setCompanyInsert, setNameInsert, }) => {
                     <i class="fa-solid fa-bars fa-xl"
                         onClick={() => setToggleMobileMenu(!toggleMobileMenu)}
                     ></i>
-                    {toggleMobileMenu && <div className="mobile-list">
+                    {toggleMobileMenu && 
+                    <div className="mobile-list">
+                        <i class="fa-solid fa-xmark fa-lg"
+                        onClick={() => setToggleMobileMenu(!toggleMobileMenu)}
+                        ></i>
                         <ul>
                             <li>
                                 <a href="#about">About</a>
