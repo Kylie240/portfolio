@@ -40,7 +40,7 @@ a{
   position: fixed;
   background: var(--secondary-ocean-color);
   color: var(--tertiary-ocean-color);
-  width: 100%;
+  width: 100vw;
   height: 4rem;
 }
 
@@ -93,6 +93,9 @@ a{
   justify-content: start;
   align-items: center;
 }
+#company-insert{
+  border-bottom: 4px solid var(--tertiary-ocean-color);
+}
 .left-home-container{
   bottom: 2rem;
   position: relative;
@@ -100,15 +103,17 @@ a{
   flex-wrap: wrap;
   flex-direction: column;
   justify-content: start;
-  align-items: start;
+  align-items: center;
 }
 .left-home-container h1{
+  text-align: center;
   font-size: 3rem;
   font-family: var(--font-family-main);
   line-height: 60px;
   padding: 0 1rem 1.4rem 1rem;
 }
 .left-home-container p{
+  text-align: center;
   margin: 1rem 0 0 0;
   font-size: 1.2rem;
   max-width: 800px;
@@ -120,6 +125,7 @@ a{
   margin: 2rem 0 .4rem 0;
   padding: 0 2rem;
   display: flex;
+  justify-content: center;
   gap: 1.5rem;
 }
 .home-links i{
@@ -469,6 +475,16 @@ a{
   gap: 1.4rem;
   width: 40%;
 }
+::-webkit-scrollbar{
+  width: 10px;
+}
+::-webkit-scrollbar-track{
+  background-color: var(--primary-ocean-color);
+}
+::-webkit-scrollbar-thumb{
+  background: var(--tertiary-ocean-color);
+}
+
 @media screen and (min-width: 576px) {
   .topbar-heading{
     letter-spacing: 10px;
@@ -487,7 +503,8 @@ a{
 @media screen and (min-width: 768px) {
   .topbar{
     position: relative;
-    left: 6rem;
+    margin-left: 6rem;
+    padding-right: 6rem;
   }
   .sidebar{
     visibility: visible;
@@ -507,10 +524,15 @@ a{
   }
   .left-home-container{
     bottom: 2rem;
+    align-items: start;
   }
   .left-home-container h1{
+    text-align: start;
     max-width: 730px;
     font-size: 3.5rem;
+  }
+  .left-home-container p{
+    text-align: start;
   }
   .projects-container{
     width: 100vw;
