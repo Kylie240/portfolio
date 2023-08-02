@@ -7,7 +7,7 @@ export const Home = () => {
 
     function handleHover () {
         const element = document.getElementById("header-insert");
-        element.innerHTML = " and love to create cool things with code."
+        element.innerHTML = " and I love to create cool things with code."
     }
     function handleExitHover () {
         const element = document.getElementById("header-insert");
