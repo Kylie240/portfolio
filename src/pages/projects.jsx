@@ -6,7 +6,7 @@ const Projects = () => {
         <h1>Projects</h1>
         
         <div className="project">
-            <img className='project-img' src="/localhost_5173_ (1).png" alt="" />
+            <img className='project-img' src="/ready-shoot.png" alt="" />
             <div className="project-description">
                 <h3 className="project-title">Ready shoot</h3>
                 <p className="project-info">
@@ -29,7 +29,7 @@ const Projects = () => {
                 </div>
             </div>
         </div><div className="project">
-            <img className='project-img' src="localhost_5173_product_2.png" alt="" />
+            <img className='project-img' src="starting-line.png" alt="" />
             <div className="project-description">
                 <h3 className="project-title">Starting Line</h3>
                 <p className="project-info">
@@ -48,7 +48,7 @@ const Projects = () => {
             </div>
         </div>
         <div className="project">
-            <img className='project-img' src="/localhost_5173_.png" alt="" />
+            <img className='project-img' src="/word-search.png" alt="" />
             <div className="project-description">
                 <h3 className="project-title">Word Search</h3>
                 <p className="project-info">
@@ -68,7 +68,7 @@ const Projects = () => {
             </div>
         </div>
         <div className="project">
-            <img className='project-img' src="/oliver-smoothie-queen.netlify.app_ (2).png" alt="" />
+            <img className='project-img' src="/smoothie-queen.png" alt="" />
             <div className="project-description">
                 <h3 className="project-title">Smoothie Queen</h3>
                 <p className="project-info">
