@@ -42,6 +42,7 @@ export const Home = () => {
                         <li className="toolbox-item">CSS</li>
                         <li className="toolbox-item">Tailwind</li>
                         <li className="toolbox-item">Javascript</li>
+                        <li className="toolbox-item">Typescript</li>
                         <li className="toolbox-item">React</li>
                         <li className="toolbox-item">Express</li>
                         <li className="toolbox-item">Node.js</li>
